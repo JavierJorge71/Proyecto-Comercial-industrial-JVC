@@ -1,3 +1,104 @@
 body{
+    background-color: rgb(211, 212, 208);
+}
+
+#img-i{
+    float: left; 
+    margin-right: 10px;
+}
+
+#img-d{
+    float: right; /* Alinea la imagen a la derecha */
+    margin-left: 100px;
+    width: 200px; /* Ancho deseado */
+    height: auto;  
+}
+.contenedor-titulo {
+    display: flex; /* Usamos flexbox para alinear los elementos en fila */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+    height: 200px; /* Altura del contenedor */
+}
+.cuadro-rojo {
     background-color: red;
+    padding: 20px;
+    color: white;
+    margin: 10px; /* Espacio entre cada cuadro */
+}
+h2 {
+    margin-top: 0;
+}
+
+.texto-debajo p:nth-of-type(1) {
+    font-size: 24px; /* Cambiar tamaño de letra para el primer párrafo */
+    font-weight: bold; /* Hacer el texto más grueso */
+    color: rgb(6, 6, 7); /* Cambiar el color del texto */
+    text-align: center; /* Centrar el texto para el primer párrafo */
+}
+
+.texto-debajo p:nth-of-type(2) {
+    font-size: 18px; /* Cambiar tamaño de letra para el segundo párrafo */
+    line-height: 1.5; /* Ajustar el espaciado entre líneas */
+    font-style: italic; /* Establecer estilo cursiva */
+    color: rgb(4, 5, 4); /* Cambiar el color del texto */
+    text-align: center; /* Centrar el texto para el primer párrafo */
+}
+
+/* Estilos para las imágenes dentro de los círculos */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(228, 225, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.circulo img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    margin-bottom: -10px;
+}
+.nombre-producto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px; /* Tamaño de letra para los nombres de productos */
+    margin-bottom: -10px; /* Espacio entre el nombre y la línea */
+    position: relative;
+}
+
+/* Estilos para las imágenes dentro de los cuadrados */
+.cuadrado {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.cuadrado img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   
+}
+.nombre-producto-cuadrado {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.contenedor-imagenes {
+    margin-top: 20px; /* Espacio arriba */
 }
