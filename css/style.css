@@ -78,6 +78,13 @@ h2 {
 
 /* Estilos para las imágenes dentro de los cuadrados */
 .cuadrado {
+    border: 1px solid #080808; /* Borde para el cuadro grande */
+    padding: 10px; /* Espaciado interior para el cuadro grande */
+    width: 200px; /* Ancho del cuadro grande, ajusta según tus necesidades */
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+/*.cuadrado {
     width: 120px;
     height: 120px;
     background-color: rgb(255, 255, 255);
@@ -86,7 +93,7 @@ h2 {
     align-items: center;
     margin-bottom: 20px;
 
-}
+}*/
 .cuadrado img {
     max-width: 80px;
     max-height: 80px;
@@ -101,4 +108,30 @@ h2 {
 }
 .contenedor-imagenes {
     margin-top: 20px; /* Espacio arriba */
+}
+
+/* Estilos para el contenedor */
+.contenedor {
+    margin-top: 40px; /* Puedes ajustar el valor para cambiar el espacio */
+}
+
+.contenido {
+    display: flex; /* Utilizamos flexbox para organizar los elementos internos */
+    flex-direction: column; /* Apilamos los elementos verticalmente */
+    align-items: center; /* Centramos horizontalmente los elementos */
+    text-align: center; /* Centramos el texto */
+}
+
+.imagen img {
+    /* Estilos para la imagen */
+    width: 100%; /* Hacemos que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Para mantener la proporción */
+    display: block; /* Elimina espacios innecesarios debajo de la imagen */
+}
+
+.texto {
+    /* Estilos para el cuadro del texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    color: white; /* Letra blanca */
+    padding: 10px; /* Espaciado interior para el texto */
 }
